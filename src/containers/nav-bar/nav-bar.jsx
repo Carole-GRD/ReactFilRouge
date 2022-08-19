@@ -1,22 +1,22 @@
-import { Avatar, Drawer } from '@mui/material';
+import { Stack, Avatar, Divider } from '@mui/material';
 import IconMenu from './icon_menu.jpg';
-
-const NavBar = ({isVisible, onCloseMenu}) => {
-
-    
+import style from './nav-bar.module.css';
+const NavBar = () => {
 
     return (
-        <Drawer
-            anchor='left'
-            open={isVisible}
-            onClose={onCloseMenu}>
-            
+        <nav>
+            <Stack className={style.nav}
+                direction='column'
+                divider={<Divider orientation="horizontal" flexItem />}
+                spacing={2}>
                 <Avatar 
-                    sx={{ width:90, height:90}}
+                    // sx={{ width:90, height:90, alignSelf:'center' }}
+                    className={style.logo}
                     alt='Logo menu' 
                     src={IconMenu} />
-            
-        </Drawer>
+                <p>Menu içi</p>
+            </Stack>            
+        </nav>
     );
 };
 

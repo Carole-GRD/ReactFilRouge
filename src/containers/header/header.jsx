@@ -1,12 +1,11 @@
 import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/MenuTwoTone';
-import { Box } from "@mui/system";
+
 
 const Header = ({onOpenMenu}) => {
 
     return (
         <header>
-            <Box sx={{ flexGrow : 1}}>
                 <AppBar position='static'>
                     <Toolbar>
                         <IconButton
@@ -27,7 +26,6 @@ const Header = ({onOpenMenu}) => {
                         
                     </Toolbar>
                 </AppBar>
-            </Box>
         </header>
     );
 };

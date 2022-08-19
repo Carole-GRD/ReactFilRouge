@@ -7,7 +7,6 @@ const About = () => {
             <TitlePage>
                 About !
             </TitlePage>
-            
         </>
     );
 };

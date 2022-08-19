@@ -14,7 +14,7 @@ const NavBar = () => {
                     className={style.logo}
                     alt='Logo menu' 
                     src={IconMenu} />
-                <p>Menu içi</p>
+                <p>Menu ici</p>
             </Stack>            
         </nav>
     );

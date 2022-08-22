@@ -19,7 +19,10 @@ export const addFruit = createAction('fruit/add', (fruit) => ({
 // ---------------------------
 export const removeFruit = createAction('fruit/remove');
 // ---------------------------
-export const expireFruit = createAction('fruit/expire')
+export const expireFruit = createAction('fruit/expire');
+// ---------------------------
+// ↓ pas besoin de payload car on n'a pas besoin d'informations pour trouver des données particulières en fonction d'une caractéristique, d'un identifiant,...
+export const clearFruit = createAction('fruit/clear');
 
 
 

@@ -27,6 +27,10 @@ const fruitReducer = createReducer(initialState, (builder) => {
             const fruitId = action.payload;
             const targetIndex = state.fruit.findIndex(f => f.id === fruitId);
             state.fruits[targetIndex].expire = true;
+        })
+        .addCase(clearFruit, (state) =>  {
+            state.fruits = [];
+            state.msg = 'Clear !'
         });
 });
 

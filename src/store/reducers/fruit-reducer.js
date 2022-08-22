@@ -1,4 +1,5 @@
-import { createReducer } from ';@reduxjs/toolkit';
+import { createReducer } from '@reduxjs/toolkit';
+import { addFruit, removeFruit, expireFruit, clearFruit } from '../actions/fruit-action';
 
 const initialState = {
     fruits: [],

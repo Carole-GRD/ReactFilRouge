@@ -13,7 +13,7 @@
 - React-Redux : Bibliothèque pour lier React et Redux
 
 ### Formulaire
-- ...
+- React hook form : Gestionnaire de formulaire en React
 
 ### Divers
 - prop-types : Vérifier les données des props
